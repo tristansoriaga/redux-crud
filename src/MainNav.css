@@ -1,0 +1,13 @@
+.Nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+ul li {
+  float: left;
+  padding-right: 10px;
+  list-style-type: none;
+}
