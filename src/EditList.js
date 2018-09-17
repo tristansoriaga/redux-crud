@@ -7,7 +7,7 @@ const EditList = () => {
       <h1>Edit List</h1>
       <hr />
       <form>
-        <label for="fname">First Name</label>
+        <label htmlFor="fname">First Name</label>
         <input
           type="text"
           id="fname"
@@ -15,10 +15,10 @@ const EditList = () => {
           placeholder="First Name"
         />
 
-        <label for="lname">Last Name</label>
+        <label htmlFor="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Last Name" />
 
-        <label for="cost">Cost</label>
+        <label htmlFor="cost">Cost</label>
         <select id="cost" name="cost">
           <option value="100">100</option>
           <option value="200">200</option>
