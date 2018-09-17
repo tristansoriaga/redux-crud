@@ -7,6 +7,7 @@ import MainNav from "../MainNav";
 import App from "../App";
 import CreateList from "../CreateList";
 import EditList from "../EditList";
+import ViewProfile from "../ViewProfile";
 
 const Root = ({ store }) => (
   <Provider store={store}>
@@ -16,6 +17,7 @@ const Root = ({ store }) => (
         <Route exact path="/" component={App} />
         <Route path="/create-list" component={CreateList} />
         <Route path="/edit-list" component={EditList} />
+        <Route path="/view-profile" component={ViewProfile} />
       </div>
     </BrowserRouter>
   </Provider>

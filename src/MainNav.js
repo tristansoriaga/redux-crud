@@ -21,6 +21,11 @@ const MainNav = () => {
             Edit List
           </NavLink>
         </li>
+        <li>
+          <NavLink exact activeClassName="current" to="/view-profile">
+            View Profile
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
