@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "faker": "4.1.0",
     "lodash": "4.17.11",
     "react": "16.4.2",
     "react-dom": "16.4.2",
@@ -12,7 +13,9 @@
     "react-router-dom": "4.3.1",
     "react-router-redux": "4.0.8",
     "react-scripts": "1.1.4",
-    "redux": "4.0.0"
+    "redux": "4.0.0",
+    "shortid": "2.2.13",
+    "txtgen": "2.2.2"
   },
   "devDependencies": {},
   "scripts": {

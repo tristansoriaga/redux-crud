@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./MainNav.css";
+import "./Nav.css";
 
-const MainNav = () => {
+const Nav = () => {
   return (
     <nav className="Nav">
       <ul>
@@ -21,14 +21,9 @@ const MainNav = () => {
             Edit List
           </NavLink>
         </li>
-        <li>
-          <NavLink exact activeClassName="current" to="/view-profile">
-            View Profile
-          </NavLink>
-        </li>
       </ul>
     </nav>
   );
 };
 
-export default MainNav;
+export default Nav;
