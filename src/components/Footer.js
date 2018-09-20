@@ -1,10 +1,12 @@
 import React from "react";
 import "./Footer.css";
 
+import Nav from "./Nav";
+
 const Footer = () => {
   return (
-    <div className="app">
-      <h1>Footer</h1>
+    <div className="footer">
+      <Nav />
     </div>
   );
 };

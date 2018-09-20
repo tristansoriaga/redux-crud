@@ -1,10 +1,12 @@
 import React from "react";
 import "./HomeContent.css";
 
+import ViewList from "../containers/ViewList";
+
 const HomeContent = () => {
   return (
     <div class="home">
-      <h1>Home Content</h1>
+      <ViewList />
     </div>
   );
 };
