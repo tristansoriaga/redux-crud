@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Provider } from "react-redux";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route, Router } from "react-router-dom";
+import history from "./history";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -12,7 +13,7 @@ import ViewProfile from "../containers/ViewProfile";
 
 const Root = ({ store }) => (
   <Provider store={store}>
-    <BrowserRouter>
+    <Router history={history}>
       <div>
         <Header />
         <Route exact path="/" component={HomeContent} />
@@ -21,7 +22,7 @@ const Root = ({ store }) => (
         <Route path="/view-profile" component={ViewProfile} />
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   </Provider>
 );
 

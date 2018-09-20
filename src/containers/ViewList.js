@@ -1,8 +1,11 @@
 import React from "react";
+import history from "../components/history";
+
 import "./ViewList.css";
 import _ from "lodash";
 
 import store from "../store";
+import { viewIndividualProfile } from "../actions";
 
 const ViewList = () => {
   const { contacts } = store.getState();
@@ -20,12 +23,12 @@ const ViewList = () => {
             <th />
           </tr>
           {contact.map(val => (
-            <tr>
+            <tr key={val.user_id}>
               <td>{val.name}</td>
               <td>{val.email}</td>
               <td>{val.status}</td>
               <td>
-                <button>View</button>
+                <button onClick={handleUserClick.bind(null, val)}>View</button>
               </td>
               <td>
                 <button>Delete</button>
@@ -36,6 +39,12 @@ const ViewList = () => {
       </table>
     </div>
   );
+};
+
+const handleUserClick = user => {
+  console.log(user);
+  store.dispatch(viewIndividualProfile(user));
+  history.push("/view-profile");
 };
 
 export default ViewList;
