@@ -1,11 +1,16 @@
 import React from "react";
 import "./CreateList.css";
+import { addIndividualProfile } from "../actions";
+import history from "../components/history";
+
+import store from "../store";
 
 const CreateList = () => {
+  const { user } = store;
   return (
     <div className="createlist">
       <h1>Create List</h1>
-      <form>
+      <form onSubmit={handleAddClick.bind(null, "")}>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Name" />
 
@@ -22,6 +27,12 @@ const CreateList = () => {
       </form>
     </div>
   );
+};
+
+const handleAddClick = user => {
+  console.log(user);
+  store.dispatch(addIndividualProfile(user));
+  history.push("/");
 };
 
 export default CreateList;

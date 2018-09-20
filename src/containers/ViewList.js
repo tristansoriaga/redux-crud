@@ -1,6 +1,5 @@
 import React from "react";
 import history from "../components/history";
-
 import "./ViewList.css";
 import _ from "lodash";
 
