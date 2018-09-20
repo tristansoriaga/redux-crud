@@ -26,3 +26,7 @@ td:nth-last-child(-n + 3) {
   min-width: 50px;
   padding: 10px;
 }
+
+h1 {
+  margin-block-start: 0px;
+}

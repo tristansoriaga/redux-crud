@@ -16,3 +16,7 @@ p {
 img {
   padding-top: 50px;
 }
+
+h1 {
+  margin-block-start: 0px;
+}

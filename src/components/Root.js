@@ -4,10 +4,11 @@ import { Provider } from "react-redux";
 import { Route, Router } from "react-router-dom";
 import history from "./history";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 import HomeContent from "./HomeContent";
-import EditList from "../EditList";
+
+import EditList from "../containers/EditList";
 import CreateList from "../containers/CreateList";
 import ViewProfile from "../containers/ViewProfile";
 

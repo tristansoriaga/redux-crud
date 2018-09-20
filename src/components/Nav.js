@@ -16,11 +16,6 @@ const Nav = () => {
             Create List
           </NavLink>
         </li>
-        <li>
-          <NavLink exact activeClassName="current" to="/edit-list">
-            Edit List
-          </NavLink>
-        </li>
       </ul>
     </nav>
   );

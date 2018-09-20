@@ -13,6 +13,7 @@ const ViewList = () => {
 
   return (
     <div className="viewlist">
+      <h1>View List</h1>
       <table>
         <tbody>
           <tr>
@@ -46,13 +47,11 @@ const ViewList = () => {
 };
 
 const handleViewClick = user => {
-  console.log(user);
   store.dispatch(viewIndividualProfile(user));
   history.push("/view-profile");
 };
 
 const handleEditClick = user => {
-  console.log(user);
   store.dispatch(editIndividualProfile(user));
   history.push("/edit-list");
 };

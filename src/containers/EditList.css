@@ -13,6 +13,17 @@ select {
   box-sizing: border-box;
 }
 
+textarea {
+  min-height: 100px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 input[type="submit"] {
   width: 100%;
   background-color: #4caf50;
@@ -40,4 +51,8 @@ form {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   padding: 30px 0px;
+}
+
+h1 {
+  margin-block-start: 0px;
 }

@@ -8,6 +8,7 @@ const ViewProfile = () => {
 
   return (
     <div className="viewprofile">
+      <h1>View Profile</h1>
       <h3>
         <b>Name:</b>
       </h3>

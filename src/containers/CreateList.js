@@ -13,7 +13,7 @@ const CreateList = () => {
         <input type="text" id="email" name="email" placeholder="Email" />
 
         <label htmlFor="status">Status</label>
-        <input type="text" id="status" name="status" placeholder="Status" />
+        <textarea type="text" id="status" name="status" placeholder="Status" />
 
         <label htmlFor="photo">Photo</label>
         <input type="text" id="photo" name="photo" placeholder="Photo" />
