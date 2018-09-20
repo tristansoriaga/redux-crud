@@ -7,8 +7,8 @@ import history from "./history";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HomeContent from "./HomeContent";
-import CreateList from "../CreateList";
 import EditList from "../EditList";
+import CreateList from "../containers/CreateList";
 import ViewProfile from "../containers/ViewProfile";
 
 const Root = ({ store }) => (

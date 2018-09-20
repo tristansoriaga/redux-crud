@@ -1,3 +1,18 @@
 .viewprofile {
+  margin: 0 auto;
+  font-family: sans-serif;
   text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 30px 0px;
+}
+
+p {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  padding-top: 50px;
 }

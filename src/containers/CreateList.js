@@ -3,20 +3,17 @@ import "./CreateList.css";
 
 const CreateList = () => {
   return (
-    <div className="App">
+    <div className="createlist">
       <h1>Create List</h1>
-      <hr />
       <form>
-        <label htmlFor="fname">First Name</label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="First Name"
-        />
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" />
 
-        <label htmlFor="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Last Name" />
+        <label htmlFor="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email" />
+
+        <label htmlFor="status">Status</label>
+        <input type="text" id="status" name="status" placeholder="Status" />
 
         <label htmlFor="cost">Cost</label>
         <select id="cost" name="cost">
