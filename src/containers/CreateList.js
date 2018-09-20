@@ -15,14 +15,10 @@ const CreateList = () => {
         <label htmlFor="status">Status</label>
         <input type="text" id="status" name="status" placeholder="Status" />
 
-        <label htmlFor="cost">Cost</label>
-        <select id="cost" name="cost">
-          <option value="100">100</option>
-          <option value="200">200</option>
-          <option value="300">300</option>
-        </select>
+        <label htmlFor="photo">Photo</label>
+        <input type="text" id="photo" name="photo" placeholder="Photo" />
 
-        <input type="submit" value="Save" />
+        <input className="btnSave" type="submit" value="Save" />
       </form>
     </div>
   );

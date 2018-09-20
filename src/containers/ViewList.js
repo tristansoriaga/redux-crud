@@ -5,7 +5,7 @@ import "./ViewList.css";
 import _ from "lodash";
 
 import store from "../store";
-import { viewIndividualProfile } from "../actions";
+import { viewIndividualProfile, editIndividualProfile } from "../actions";
 
 const ViewList = () => {
   const { contacts } = store.getState();
@@ -21,6 +21,7 @@ const ViewList = () => {
             <th>Status</th>
             <th />
             <th />
+            <th />
           </tr>
           {contact.map(val => (
             <tr key={val.user_id}>
@@ -28,7 +29,10 @@ const ViewList = () => {
               <td>{val.email}</td>
               <td>{val.status}</td>
               <td>
-                <button onClick={handleUserClick.bind(null, val)}>View</button>
+                <button onClick={handleViewClick.bind(null, val)}>View</button>
+              </td>
+              <td>
+                <button onClick={handleEditClick.bind(null, val)}>Edit</button>
               </td>
               <td>
                 <button>Delete</button>
@@ -41,10 +45,16 @@ const ViewList = () => {
   );
 };
 
-const handleUserClick = user => {
+const handleViewClick = user => {
   console.log(user);
   store.dispatch(viewIndividualProfile(user));
   history.push("/view-profile");
+};
+
+const handleEditClick = user => {
+  console.log(user);
+  store.dispatch(editIndividualProfile(user));
+  history.push("/edit-list");
 };
 
 export default ViewList;
