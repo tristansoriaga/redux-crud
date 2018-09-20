@@ -1,23 +1,29 @@
 import React from "react";
 import "./ViewList.css";
+import _ from "lodash";
 
-export default class ViewList extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <table>
-          <tbody>
+import store from "../store";
+
+const ViewList = () => {
+  const { contacts } = store.getState();
+  const contact = _.values(contacts);
+
+  return (
+    <div className="viewlist">
+      <table>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th />
+            <th />
+          </tr>
+          {contact.map(val => (
             <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Cost</th>
-              <th />
-              <th />
-            </tr>
-            <tr>
-              <td>Peter</td>
-              <td>Griffin</td>
-              <td>$100</td>
+              <td>{val.name}</td>
+              <td>{val.email}</td>
+              <td>{val.status}</td>
               <td>
                 <button>View</button>
               </td>
@@ -25,9 +31,11 @@ export default class ViewList extends React.Component {
                 <button>Delete</button>
               </td>
             </tr>
-          </tbody>
-        </table>
-      </div>
-    );
-  }
-}
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default ViewList;

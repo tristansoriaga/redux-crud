@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import HomeContent from "./HomeContent";
 import CreateList from "../CreateList";
 import EditList from "../EditList";
-import ViewProfile from "../ViewProfile";
+import ViewProfile from "../containers/ViewProfile";
 
 const Root = ({ store }) => (
   <Provider store={store}>

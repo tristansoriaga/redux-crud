@@ -6,3 +6,7 @@ table {
 table td {
   padding: 10px 50px;
 }
+
+.viewlist {
+  font-family: sans-serif;
+}
